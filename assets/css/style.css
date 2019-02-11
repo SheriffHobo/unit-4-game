@@ -1,0 +1,156 @@
+body {
+    background-image: url("../images/cave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: aquamarine;
+    padding: 30px;
+    border: solid 4px;
+    border-color: aquamarine;
+    border-radius: 25px;
+}
+
+.ihead {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.ruleshead {
+    font-size: 2rem;
+    color: crimson;
+}
+
+.ttext {
+    font-size: 3rem;
+}
+
+.rtext {
+    text-align: justify;
+    margin: 0 30px 0;
+    align-self: baseline;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main {
+    margin-top: 20px;
+    align-content: center;
+}
+
+.lmain {
+    border: solid 4px;
+    border-color: aquamarine;
+    border-radius: 25px;
+    background-color: black;
+    width: 20%;
+    height: 350px;
+}
+
+.mmain {
+    border: solid 4px;
+    border-color: aquamarine;
+    border-radius: 25px;
+    background-color: black;
+    width: 50%;
+    height: 350px;
+}
+
+.rmain {
+    border: solid 4px;
+    border-color: aquamarine;
+    border-radius: 25px;
+    background-color: black;
+    width: 20%;
+    height: 350px;
+}
+
+.crystal {
+    display: block;
+    margin: 15px auto;
+    border-radius: 25px;
+    border: solid 2px;
+    border-color: aquamarine;
+}
+
+.tobeat {
+    width: 45%;
+    height: 180px;
+    background: red;
+    background-image: url('../images/recticle.png');
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: 50% 72%; 
+    background-size: 50%;
+    float: left;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 20px 10px 0 15px;
+
+}
+
+.pscore {
+    width: 45%;
+    height: 180px;
+    background-color: green;
+    float: right;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 20px 15px 15px 0;
+}
+
+.tallies {
+    width: 90%;
+    height: 100px;
+    background-color: yellow;
+    clear: both;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.wtall {
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 25%;
+}
+
+.ltall {
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 45%;
+}
+
+.p1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size: 5rem;
+    line-height: 120%;
+    color: white;
+}
+
+.p3 {
+    font-size: 2rem;
+    line-height: 150%;
+}
