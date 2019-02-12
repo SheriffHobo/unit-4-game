@@ -1,28 +1,85 @@
-$(function () {
-
 // Variables for storing the various numbers
-let totNumber = [];
+let totNumber = 0;
+console.log(totNumber);
 let winCount = 0;
 let lossCount = 0;
+let tarScore = genTarScore();
+let crystals = [{
+    name: 'blue',
+    value: 0,
+    id: 'bluec'
+},
+{
+    name: 'green',
+    value: 0,
+    id: 'greenc'
+},
+{
+    name: 'pink',
+    value: 0,
+    id: 'pinkc'
+},
+{
+    name: 'purple',
+    value: 0,
+    id: 'purpc'
+}];
 
-// On page load, generate target & crystal numbers
-let ranNum1 = Math.floor(Math.random() * (120 - 19)) + 19;
-document.querySelector('#tarnum').innerHTML = ranNum1;
-let blueC = Math.floor(Math.random() * (12 - 1)) + 1;
-// Need to assiciate 'blueC' value with 'bluec' pic
-console.log(blueC);
-let greenC = Math.floor(Math.random() * (12 - 1)) + 1;
+$(function () {
 
-let pinkC = Math.floor(Math.random() * (12 - 1)) + 1;
+    displayTarScore();
+    genCrysScores();
+    displayTotScore();
+    displayWins();
+    displayLosses();
 
-let purpC = Math.floor(Math.random() * (12 - 1)) + 1;
+    $('#main').on('click', 'img', function () {
+        totNumber += parseInt($(this).attr('data-value'));
+        console.log(totNumber);
+    });
 
+    function displayTarScore() {
+        $('#tarnum').text(tarScore);
+    };
 
-// Playing the game
+    function displayTotScore() {
+        $('#totnumber').text(totNumber);
+    };
 
-// Update win/lose scores
+    function displayWins() {
+        $('#wincount').text(winCount);
+    };
 
-// Reset page
+    function displayLosses() {
+        $('#losscount').text(lossCount);
+    };
+    
+    function genCrysScores() {
+        for (let i = 0; i < 4; i++) {
+            let score = (Math.floor(Math.random() * (12 - 1)) + 1);
+            crystals[i].value = score;
+            $('#' + crystals[i].id).attr('data-value', crystals[i].value);
+        }
+        return true;
+    };
 
+    if (totNumber === tarScore) {
+        alert('Well done! You win that round!');
+        winCount++;
+        genTarScore();
+        genCrysScores();
+        $(totNumber).val('');
+    } else {
+        (totNumber > tarScore); {
+            alert('Too much! You lost that round!');
+            lossCount++;
+            genTarScore();
+            genCrysScores();
+            $(totNumber).val('');
+        };
+    };
 });
 
+function genTarScore() {
+    return Math.floor(Math.random() * (120 - 19)) + 19;
+};
