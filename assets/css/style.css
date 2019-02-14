@@ -21,7 +21,7 @@ header {
 }
 
 .ihead {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -94,14 +94,13 @@ header {
     background-image: url('../images/recticle.png');
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-position: 50% 72%; 
+    background-position: 50% 72%;
     background-size: 50%;
     float: left;
     border-radius: 25px;
     text-align: center;
     padding-top: 30px;
     margin: 20px 10px 0 15px;
-
 }
 
 .pscore {
@@ -153,4 +152,156 @@ header {
 .p3 {
     font-size: 2rem;
     line-height: 150%;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        max-width: 100%;
+        margin: 5px auto;
+        border-radius: 10px;
+        border: solid 2px;
+    }
+    .main {
+        margin-top: 5px;
+    }
+    .mmain,
+    .lmain,
+    .rmain {
+        max-width: 90%;
+        height: 42%;
+        margin: 5px auto;
+        border-radius: 15px;
+        border: solid 2px;
+        border-color: aquamarine;
+    }
+    .p1 {
+        font-size: 2rem;
+    }
+    .p2 {
+        font-size: 4.25rem;
+    }
+    .p3 {
+        font-size: 2rem;
+    }
+    .crystal {
+        max-width: 90%;
+        border-radius: 15px;
+        border: solid 2px;
+        margin: 12px auto;
+    }
+    .tobeat {
+        height: 180px;
+        border-radius: 10px;
+        padding-top: 5px;
+        margin: 5px 5px 0 5px;
+    }
+    .pscore {
+        height: 180px;
+        border-radius: 10px;
+        padding-top: 5px;
+        margin: 5px 5px 5px 0;
+    }
+    .tallies {
+        width: 90%;
+        height: 100px;
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    .wtall {
+        left: 20%;
+    }
+    .ltall {
+        left: 40%;
+    }
+    .wtall {
+        left: 15%;
+    }
+    .ltall {
+        left: 40%;
+    }
+}
+
+/* Phone */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .ihead {
+        max-width: 90%;
+    }
+    img {
+        max-width: 90%;
+    }
+}
+
+/* Smaller Phone */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        max-width: 100%;
+        margin: 5px auto;
+        border-radius: 10px;
+        border: solid 2px;
+    }
+    .main {
+        margin-top: 5px;
+    }
+    .mmain,
+    .lmain,
+    .rmain {
+        max-width: 90%;
+        height: 25%;
+        margin: 5px auto;
+        border-radius: 10px;
+        border: solid 2px;
+        border-color: aquamarine;
+    }
+    .p1 {
+        font-size: 1rem;
+    }
+    .p2 {
+        font-size: 3rem;
+    }
+    .p3 {
+        font-size: 1.5rem;
+    }
+    .crystal {
+        max-width: 90%;
+        border-radius: 10px;
+        border: solid 2px;
+        margin: 12px auto;
+    }
+    .ruleshead {
+        font-size: 1.25rem;
+    }
+    .ttext {
+        font-size: 1.5rem;
+    }
+    .rtext {
+        font-size: 1rem;
+    }
+    .tobeat {
+        height: 100px;
+        border-radius: 10px;
+        padding-top: 5px;
+        margin: 5px 5px 0 5px;
+    }
+    .pscore {
+        height: 100px;
+        border-radius: 10px;
+        padding-top: 5px;
+        margin: 5px 5px 5px 0;
+    }
+    .tallies {
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    .wtall {
+        left: 20%;
+    }
+    .ltall {
+        left: 40%;
+    }
 }
